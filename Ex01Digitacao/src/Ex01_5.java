@@ -5,7 +5,7 @@
 
   TAREFA:
   - peça para o usuário informar um valor inteiro em reais, sem os centavos
-  - calcule e imprima quantas notas de 100, 50, 20, 10, 5 e 2 reais 
+  - calcule e imprima quantas notas de 50, 10, 5 e 2 reais
     e quantas moedas de 1 real é preciso para fazer esse valor
   - não é necessário usar if em nenhum lugar: use apenas divisão inteira (/)
     e resto da divisão (%)

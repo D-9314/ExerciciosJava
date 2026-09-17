@@ -12,6 +12,11 @@
   - se formarem um triângulo, diga se ele é equilátero, isósceles ou
     escaleno
 
+  DICA:
+  - A operação lógica "E" em java é &&
+  - A operação lógica "OU" em java é ||
+  - A operação lógica "NÃO" em java é !
+
   FORMULA:
   - três lados formam um triângulo quando cada lado é menor que a soma
     dos outros dois
