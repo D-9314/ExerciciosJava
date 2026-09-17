@@ -5,8 +5,7 @@ import java.util.Scanner;
   - só digita um nome e imprime
 
   TAREFA:
-  - só execute o programa e tente associar cada linha com o resultado
-  - tente executar passo a passo
+  - altere o programa para pedir nome e sobrenome e immprimir juntos
 -------------------------------------------------------------------*/
 public class Ex01_2 {
     public static void main(String[] args) {
