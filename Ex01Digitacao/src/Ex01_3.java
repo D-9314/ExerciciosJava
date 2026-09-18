@@ -11,16 +11,13 @@ import java.util.Scanner;
 -------------------------------------------------------------------*/
 public class Ex01_3 {
     public static void main(String[] args) {
-        // cria um scanner uma vez só no começo
         Scanner teclado = new Scanner(System.in);
 
-        // variável de texto (String)
         String nome;
         System.out.print("Digite seu nome: ");
         nome = teclado.next();
         System.out.printf("Olá, %s, como vai?\n", nome);
 
-        // inteiro
         int idade;
         System.out.print("Qual sua idade? ");
         idade = teclado.nextInt();

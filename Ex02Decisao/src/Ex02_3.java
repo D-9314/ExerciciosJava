@@ -1,5 +1,5 @@
 import java.util.Random;
-
+import java.util.Scanner;
 /*-------------------------------------------------------------------
   Ex 2.3: Adivinhe o numero
   - gerar um numero aleatorio entre 1 e 3
@@ -21,8 +21,17 @@ public class Ex02_3 {
     public static void main(String[] args) {
         // gera um numero aleatorio entre 1 e 3
         Random random = new Random();
-        int numeroSorteado = random.nextInt(3) + 1;
-
+        int numeroSorteado = random.nextInt(10) + 1;
+        Scanner scanner = new Scanner(System.in);
         // comece seu código aqui
+        System.out.print("Chute um numero de 1 a 10:");
+        int numeroescolhido = scanner.nextInt();
+        if (numeroescolhido==numeroSorteado){
+            System.out.print("Você acertou!!!");
+        }
+        else {
+            System.out.print("Você errou :(");
+        }
+        scanner.close();
     }
 }

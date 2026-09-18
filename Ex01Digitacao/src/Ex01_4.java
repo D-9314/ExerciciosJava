@@ -10,8 +10,15 @@
   - calcule e imprima quantos ovos sobram
   - use a operação de divisão inteira (/) e resto da divisão (%)
 -------------------------------------------------------------------*/
+import java.util.Scanner;
 public class Ex01_4 {
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in);
+System.out.printf("Quantos ovos sua galinha Botou:");
+        int Ovos = scanner.nextInt();
+       int Caixascheias =(Ovos / 12 );
+       System.out.printf("Você podera levar:"+Caixascheias + " " +"Caixas cheias");
+       int Sobra = (Ovos%12 );
+       System.out.println("\n Vai sobrar:"+ Sobra);
     }
 }

@@ -21,8 +21,24 @@
   - exemplos: (double) quilometros / litros 
     ou quilometros / (double) litros
 -------------------------------------------------------------------*/
+import java.util.Scanner;
+
 public class Ex01_6 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Quantos metros você correu: ");
+        int metros = scanner.nextInt();
+
+        System.out.print("Quantos litros de água você bebeu: ");
+        double litros = scanner.nextDouble();
+        if (litros > 0) {
+            double metrosPorLitro = metros / litros;
+            System.out.printf("Você correu %.2f metros para cada litro de água.%n", metrosPorLitro);
+        } else {
+            System.out.println("Você não bebeu água durante a corrida!");
+        }
+
+        scanner.close();
     }
 }
