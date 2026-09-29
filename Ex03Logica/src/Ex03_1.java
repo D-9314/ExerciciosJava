@@ -6,8 +6,13 @@
  *
  * Desafio: aceite letras maiúsculas e minúsculas.
  */
+import java.util.Scanner;
 public class Ex03_1 {
     public static void main(String[] args) {
-        // escreva sua solução aqui
+        Scanner scanner = new Scanner(System.in);
+       System.out.print("Escolha uma porta:");
+        String porta;
+
+
     }
 }
