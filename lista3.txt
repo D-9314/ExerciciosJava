@@ -1,0 +1,427 @@
+/*-------------------------------------------------------------------
+  Ex 3.1: Porta secreta
+  - perguntar ao usuário qual porta ele deseja abrir
+  - tomar uma decisão de acordo com a porta escolhida
+
+  TAREFA:
+  - peça para o usuário escolher uma porta, digitando A, B ou C
+  - se escolher A, imprima:
+      "Você entrou na sala de música."
+  - se escolher B, imprima:
+      "Você entrou na biblioteca."
+  - se escolher C, imprima:
+      "Você entrou na sala secreta."
+  - se digitar qualquer outra letra, imprima:
+      "Essa porta não existe."
+
+  DICA:
+  - use if, else if e else para tomar as decisões
+  - como a escolha é uma única letra, você pode armazená-la em uma
+    variável do tipo char
+
+  DESAFIO:
+  - faça o programa aceitar tanto letras maiúsculas quanto minúsculas
+  - por exemplo, tanto 'A' quanto 'a' devem abrir a primeira porta
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+  Ex 3.2: Senha do castelo
+  - pedir uma senha
+  - verificar se a senha está correta
+  - informar se o acesso foi permitido ou negado
+
+  TAREFA:
+  - peça para o usuário digitar uma senha
+  - considere que a senha correta é "dragao"
+  - se a senha estiver correta, imprima:
+      "Acesso permitido!"
+  - caso contrário, imprima:
+      "Senha incorreta!"
+
+  ATENÇÃO:
+  - a senha é uma String
+  - para comparar duas Strings em Java, não use o operador ==
+  - use o método .equals()
+
+  EXEMPLO:
+  - senha.equals("dragao")
+  - essa expressão será true quando a variável senha contiver
+    exatamente o texto "dragao"
+
+  DESAFIO:
+  - faça o programa aceitar a senha independentemente de letras
+    maiúsculas ou minúsculas
+  - por exemplo, "dragao", "Dragao" e "DRAGAO" devem ser aceitas
+  - para isso, utilize o método .equalsIgnoreCase()
+
+  EXEMPLO:
+  - senha.equalsIgnoreCase("dragao")
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+  Ex 3.3: Controle remoto
+  - perguntar qual botão do controle remoto o usuário deseja apertar
+  - executar uma ação de acordo com o botão escolhido
+
+  TAREFA:
+  - peça para o usuário digitar uma letra representando um botão
+  - considere os seguintes comandos:
+
+      P - Play
+      S - Stop
+      A - Avançar
+      V - Voltar
+
+  - quando o usuário escolher P, imprima:
+      "Play"
+
+  - quando escolher S, imprima:
+      "Stop"
+
+  - quando escolher A, imprima:
+      "Avançar"
+
+  - quando escolher V, imprima:
+      "Voltar"
+
+  - para qualquer outra letra, imprima:
+      "Botão desconhecido."
+
+  DICA:
+  - como cada comando é representado por uma única letra, utilize
+    uma variável do tipo char
+  - utilize if, else if e else para escolher a ação
+
+  DESAFIO:
+  - faça o programa aceitar tanto letras maiúsculas quanto minúsculas
+  - por exemplo, 'p' e 'P' devem executar a mesma ação
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+  Ex 3.4: Escolha seu personagem
+  - perguntar qual personagem o jogador deseja escolher
+  - apresentar uma mensagem de acordo com a escolha
+
+  TAREFA:
+  - peça para o usuário digitar o nome de um personagem
+  - considere as seguintes opções:
+
+      guerreiro
+      mago
+      arqueiro
+
+  - se escolher "guerreiro", imprima:
+      "Você escolheu o Guerreiro."
+
+  - se escolher "mago", imprima:
+      "Você escolheu o Mago."
+
+  - se escolher "arqueiro", imprima:
+      "Você escolheu o Arqueiro."
+
+  - se digitar qualquer outro nome, imprima:
+      "Personagem não encontrado."
+
+  ATENÇÃO:
+  - o nome do personagem é uma String
+  - para comparar Strings, utilize o método .equals()
+  - não utilize == para comparar Strings
+
+  EXEMPLO:
+  - personagem.equals("mago")
+
+  DESAFIO:
+  - faça o programa aceitar "Mago", "MAGO", "mago" etc.
+  - utilize o método .equalsIgnoreCase()
+
+  EXEMPLO:
+  - personagem.equalsIgnoreCase("mago")
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+  Ex 3.5: Entrada na sala VIP
+  - verificar se uma pessoa pode entrar em uma sala VIP
+  - a entrada depende de duas condições
+
+  TAREFA:
+  - pergunte ao usuário:
+      "Você possui convite? (S/N)"
+
+  - depois pergunte:
+      "Qual é a senha?"
+
+  - considere que a senha correta é "1234"
+
+  - a pessoa poderá entrar somente se possuir convite E informar
+    a senha correta
+
+  - se as duas condições forem verdadeiras, imprima:
+      "Entrada permitida."
+
+  - caso contrário, imprima:
+      "Entrada negada."
+
+  DICA:
+  - a operação lógica E em Java é representada por &&
+  - portanto, as duas condições podem ser verificadas juntas
+
+  ATENÇÃO:
+  - a resposta S/N é um char
+  - a senha é uma String
+  - para comparar a senha, utilize .equals()
+
+  DESAFIO:
+  - faça o programa aceitar tanto 'S' quanto 's' para indicar que
+    a pessoa possui convite
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+  Ex 3.6: Alarme
+  - verificar se o alarme de uma casa deve ser disparado
+  - o alarme dispara quando uma porta OU uma janela está aberta
+
+  TAREFA:
+  - pergunte ao usuário:
+      "A porta está aberta? (S/N)"
+
+  - depois pergunte:
+      "A janela está aberta? (S/N)"
+
+  - se a porta estiver aberta OU a janela estiver aberta, imprima:
+      "ALARME DISPARADO!"
+
+  - caso contrário, imprima:
+      "Tudo seguro."
+
+  DICA:
+  - a operação lógica OU em Java é representada por ||
+  - basta que uma das duas condições seja verdadeira para o alarme
+    ser disparado
+
+  DESAFIO:
+  - aceite tanto 'S' quanto 's' como resposta afirmativa
+  - aceite tanto 'N' quanto 'n' como resposta negativa
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+  Ex 3.7: Moderador do chat
+  - verificar se um usuário pode entrar em uma sala especial
+  - administradores e moderadores possuem acesso
+
+  TAREFA:
+  - pergunte ao usuário:
+      "Você é administrador? (S/N)"
+
+  - depois pergunte:
+      "Você é moderador? (S/N)"
+
+  - o usuário poderá entrar na sala se for administrador OU
+    moderador
+
+  - se puder entrar, imprima:
+      "Acesso permitido."
+
+  - caso contrário, imprima:
+      "Acesso negado."
+
+  DICA:
+  - utilize o operador lógico OU (||)
+  - a condição será verdadeira quando pelo menos uma das duas
+    respostas indicar que o usuário possui autorização
+
+  DESAFIO:
+  - crie duas variáveis boolean:
+      eAdministrador
+      eModerador
+
+  - elas devem receber true quando a resposta for "S" e false
+    quando a resposta for "N"
+
+  - depois utilize essas variáveis na decisão
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+  Ex 3.8: Máquina de jogos
+  - verificar se uma máquina pode iniciar um jogo
+  - o jogador precisa ter uma ficha
+  - a máquina também precisa estar funcionando
+
+  TAREFA:
+  - pergunte ao usuário:
+      "Você possui ficha? (S/N)"
+
+  - depois pergunte:
+      "A máquina está funcionando? (S/N)"
+
+  - o jogo poderá começar somente se o jogador possuir uma ficha
+    E a máquina estiver funcionando
+
+  - se puder começar, imprima:
+      "O jogo começou!"
+
+  - caso contrário, imprima:
+      "Não é possível iniciar o jogo."
+
+  DICA:
+  - utilize o operador lógico E (&&)
+  - as duas condições precisam ser verdadeiras
+
+  DESAFIO:
+  - crie as variáveis boolean:
+      possuiFicha
+      maquinaFuncionando
+
+  - depois utilize essas variáveis para realizar a decisão
+
+  ATENÇÃO:
+  - uma variável boolean só pode armazenar true ou false
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+  Ex 3.9: História interativa
+  - criar uma pequena história na qual as escolhas do usuário
+    determinam o caminho da história
+
+  TAREFA:
+  - o programa deve começar perguntando:
+
+      "Você está diante de uma floresta."
+      "Deseja entrar? (S/N)"
+
+  - se o usuário responder N, imprima:
+      "Você decidiu voltar para casa."
+
+  - se responder S, pergunte:
+
+      "Você encontrou uma bifurcação."
+      "Deseja seguir pela esquerda ou direita? (E/D)"
+
+  - se escolher E, imprima:
+      "Você encontrou uma casa abandonada."
+
+  - se escolher D, imprima:
+      "Você encontrou um tesouro."
+
+  DICA:
+  - utilize if, else if e else
+  - as respostas podem ser armazenadas em variáveis char
+
+  DESAFIO:
+  - adicione uma terceira decisão à história
+  - por exemplo, depois de encontrar a casa, pergunte se o usuário
+    deseja entrar
+  - crie pelo menos quatro finais diferentes para a história
+
+  OBJETIVO:
+  - perceber que estruturas de decisão podem ser utilizadas para
+    controlar diferentes caminhos dentro de um programa
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+  Ex 3.10: Pergunte novamente
+  - utilizar o comando WHILE para repetir uma pergunta
+  - a repetição deve continuar enquanto o usuário desejar
+
+  TAREFA:
+  - pergunte ao usuário:
+
+      "Você quer continuar? (S/N)"
+
+  - enquanto a resposta for S, faça a pergunta novamente
+
+  - quando o usuário responder N, imprima:
+
+      "Programa encerrado."
+
+  DICA:
+  - o comando while repete um bloco de código enquanto uma condição
+    for verdadeira
+
+  - como a resposta é uma única letra, utilize uma variável char
+
+  - a condição do while pode verificar se a resposta é 'S'
+
+  DESAFIO:
+  - faça o programa aceitar tanto 'S' quanto 's'
+
+  ATENÇÃO:
+  - lembre-se de atualizar a variável de controle dentro do while
+  - caso contrário, o programa poderá ficar repetindo para sempre
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+  Ex 3.11: Senha até acertar
+  - utilizar o comando WHILE para permitir várias tentativas
+  - o usuário deve continuar tentando até informar a senha correta
+
+  TAREFA:
+  - considere que a senha correta é:
+
+      "banana"
+
+  - peça para o usuário informar a senha
+
+  - enquanto a senha estiver errada, imprima:
+
+      "Senha incorreta. Tente novamente."
+
+  - peça a senha novamente
+
+  - quando o usuário informar a senha correta, imprima:
+
+      "Acesso permitido!"
+
+  DICA:
+  - utilize o comando while para repetir a tentativa
+  - utilize o método .equals() para comparar Strings
+
+  EXEMPLO:
+      senha.equals("banana")
+
+  - essa expressão será true quando a senha for exatamente "banana"
+
+  ATENÇÃO:
+  - não utilize == para comparar Strings
+  - para repetir enquanto a senha estiver errada, você pode utilizar
+    o operador !:
+
+      !senha.equals("banana")
+
+  - o operador ! significa "NÃO"
+
+  DESAFIO:
+  - faça o programa aceitar "banana", "BANANA", "Banana" etc.
+  - utilize .equalsIgnoreCase() em vez de .equals()
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+  Ex 3.12: Palavra mágica
+  - utilizar o comando WHILE para repetir uma pergunta
+  - o programa deve continuar perguntando até a palavra correta
+    ser informada
+
+  TAREFA:
+  - peça para o usuário informar uma palavra mágica
+
+  - considere que a palavra correta é:
+
+      "abracadabra"
+
+  - enquanto a palavra estiver errada, imprima:
+
+      "Palavra errada! Tente novamente."
+
+  - peça a palavra novamente
+
+  - quando o usuário acertar, imprima:
+
+      "A porta se abriu!"
+
+  DICA:
+  - utilize uma variável String para armazenar a palavra digitada
+  - utilize .equals() ou .equalsIgnoreCase() para comparar Strings
+  - utilize while para controlar a repetição
+
+  EXEMPLO:
+
+      !palavra.equalsIgnoreCase("abracadabra")
+
+  - significa:
+      "enquanto a palavra NÃO for igual a abracadabra,
+       continue repetindo"
+
+  DESAFIO:
+  - depois que a porta se abrir, acrescente uma nova pergunta:
+      "Deseja entrar? (S/N)"
+  - dependendo da resposta, apresente um final diferente para
+    a história
+-------------------------------------------------------------------*/
