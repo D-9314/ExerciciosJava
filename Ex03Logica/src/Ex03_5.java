@@ -9,5 +9,6 @@
 public class Ex03_5 {
     public static void main(String[] args) {
         // escreva sua solução aqui
+        System.out.println("Você possui");
     }
 }
