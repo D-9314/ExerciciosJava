@@ -6,9 +6,21 @@
  *
  * Desafio: aceite S e s como resposta afirmativa.
  */
+import java.util.Scanner;
 public class Ex03_5 {
     public static void main(String[] args) {
-        // escreva sua solução aqui
-        System.out.println("Você possui");
+        Scanner scanner = new Scanner(System.in);
+        int senha = 1234;
+       String convite;
+        System.out.print("Você possui o convite:");
+        convite= scanner.nextLine();
+        System.out.println("Diga a senha:");
+        senha = scanner.nextInt();
+        if (senha==1234 && convite.equalsIgnoreCase("s")){
+            System.out.println("Você pode entrar:");}
+else{
+    System.out.println("Você não pode entrar");
+        }
+scanner.close();
     }
 }
